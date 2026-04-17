@@ -1,58 +1,154 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "The Morning Crew",
+    "Credits": "Created by Lizbeth Betancourt (lmbetanc@ucsc.edu).",
+    "InitialLocation": "Parking Lot",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "Parking Lot": {
+            "Body": "You are currently in the parking lot in front of your office building! You are opening up for the day and are ready to start your work. You have a few things to do before you can start working. Walk towards the Office!",
             "Choices": [
                 {
                     "Text": "South",
-                    "Target": "Porter"
+                    "Target": "Basement"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "Basement" : {
+            "Body": "You are at the basemnet where they keep the key to the office. You're having some foggy memory today so you can't remeber what lock has the correct key! Which will you pick?",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Black Key Lock",
+                    "Target": "Black Key Lock"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Grey Key Lock",
+                    "Target": "Grey Key Lock"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "Black Key Lock": {
+            "Body": "You open the key lock but it's not here! Dang, try the other one...",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "Grey Key Lock",
+                    "Target": "Grey Key Lock"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "Grey Key Lock": {
+            "Body": "Nice! You have the key to the office! Let's walk in and get set up for the day!",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
-                },
-                {
-                    "Text": "South",
-                    "Target": "Beyond"
+                    "Text": "Go up the stairs",
+                    "Target": "Stairs"
                 }
             ]
         },
-        "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+        "Stairs": {
+            "Body": "You think to yourself, why are there so many stairs here...",
+            "Choices": [
+                {
+                    "Text": "Keep Going Up",
+                    "Target": "Hallway"
+                },
+                {
+                    "Text": "Go Back Down?",
+                    "Target": "Secret Door"
+                }
+            ]
+        },
+        "Secret Door": {
+            "Body": "Woah! You found a secret door where the maintenance workers keep their tools. They have a cute dog here, that you can pet!",
+            "Choices": [
+                {
+                    "Text": "Pet Ralphie and Go Back Up",
+                    "Target": "Stairs"
+                },
+                {
+                    "Text": "Go Back Up",
+                    "Target": "Stairs"
+                }
+            ]
+        },
+        "Hallway" : {
+            "Body": "You're walking through the hallway and you see a sign that says 'Main Office' and another sign that says 'Community Computer'. Lets check out the Community Computer first since it takes longer!",
+            "Choices": [
+                {
+                    "Text": "Community Computer",
+                    "Target": "Community Computer"
+                }
+            ]
+        },
+    
+        "Community Computer": {
+            "Body": "Woah, there's a password on the computer and your memory is a bit foggy... Maybe try looking for the password in the office?",
+            "Choices": [
+                {
+                    "Text": "Main Office",
+                    "Target": "Main Office"
+                }
+            ]
+        },
+        "Dr. W's Office": {
+            "Body": "You look around the office and you notice a small note under the desk...",
+            "Choices": [
+                {
+                    "Text": "Under the Desk",
+                    "Target": "Under the Desk"
+                }
+            ]
+        },
+        "Under the Desk":{
+            "Body":"Nice! The password is CoCoPuffs!",
+            "Choices":[
+                {
+                    "Text": "Community Computer",
+                    "Target": "Computer"
+                }
+            ]
+        },
+        "Computer":{
+            "Body": "You got the password now log on! Don't forget to open the front door as well!",
+            "Choices":[
+                {
+                    "Text":"CoCoPuffs",
+                    "Target": "Unlock Front Door"
+                }
+            ]
+        },
+        "Dr. R's Office": {
+            "Body": "You look around the office, but you can't find a password anywhere. Maybe it's in the other office?",
+            "Choices": [
+                {
+                    "Text": "Main Office",
+                    "Target": "Main Office"
+                }
+            ]
+        },
+        "Unlock Front Door": {
+            "Body": "You unlocked the front door and you're done setting up for the day! Walk back to the main office and take a seat!",
+            "Choices": [
+                {
+                    "Text": "Main Office",
+                    "Target": "Sit Down!"
+                }
+            ]
+        },
+        "Main Office": {
+            "Body": "You're in the main office and you see two other offices...",
+            "Choices": [
+                {
+                    "Text": "Dr. R's Office",
+                    "Target": "Dr. R's Office"
+                },
+                {
+                    "Text": "Dr. W's Office",
+                    "Target": "Dr. W's Office"
+                }
+            ]
+        },
+        "Sit Down!": {
+            "Body": "You sat down and you're done! Another successful opening shift, good job!"
         }
+        
     }
 }
