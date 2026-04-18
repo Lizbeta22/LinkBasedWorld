@@ -130,6 +130,18 @@
                 {
                     "Text": "Main Office",
                     "Target": "Sit Down!"
+                },
+                {
+                    "Text":"Sit Down!",
+                    "Target": "Sit Down!"
+                },
+                {
+                    "Text": "Wander around?",
+                    "Target": "Sit Down!"
+                },
+                {
+                    "Text": "look at the fish!",
+                    "Target": "Sit Down!"
                 }
             ]
         },
